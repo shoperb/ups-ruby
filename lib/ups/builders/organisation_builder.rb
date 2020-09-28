@@ -48,7 +48,7 @@ module UPS
       #
       # @return [Ox::Element] XML representation of company_name part
       def attention_name
-        element_with_value('AttentionName', opts[:attention_name][0..34])
+        element_with_value('AttentionName', opts[:attention_name].to_s[0..34])
       end
 
       # Returns an XML representation of sender_vat_number of the company
